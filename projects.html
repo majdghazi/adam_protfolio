@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Adam Benali</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Adam<span>Benali</span></a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <p>Une sélection de travaux académiques, projets de groupe et missions de stage.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="batiment">Bâtiment</button>
+                <button class="filter-btn" data-filter="ouvrage">Ouvrages d'art</button>
+                <button class="filter-btn" data-filter="vrd">VRD & Hydraulique</button>
+                <button class="filter-btn" data-filter="geotech">Géotechnique</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="batiment">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1e3a5f, #2c5282);">
+                        <span class="project-tag">Bâtiment</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Tour résidentielle R+12 — Lyon</h3>
+                        <p class="project-meta">Projet académique · 2025 · 4 mois</p>
+                        <p>Dimensionnement complet d'un immeuble résidentiel de 12 étages en béton armé. Calcul des descentes de charges, voiles, dalles et fondations selon Eurocode 2.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Béton armé</span>
+                            <span class="tag-sm">Robot SA</span>
+                            <span class="tag-sm">Eurocode 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ouvrage">
+                    <div class="project-image" style="background: linear-gradient(135deg, #2d5a3f, #4a7c59);">
+                        <span class="project-tag">Ouvrage d'art</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Pont haubané sur la Loire</h3>
+                        <p class="project-meta">Projet de groupe · 2025 · 6 mois</p>
+                        <p>Étude conceptuelle d'un pont haubané de 180m de portée principale. Analyse statique, choix du système de haubanage, et pré-dimensionnement du pylône.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Charpente acier</span>
+                            <span class="tag-sm">Analyse dynamique</span>
+                            <span class="tag-sm">ETABS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="vrd">
+                    <div class="project-image" style="background: linear-gradient(135deg, #8b4513, #c9851e);">
+                        <span class="project-tag">VRD</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Éco-quartier de 40 lots — Bordeaux</h3>
+                        <p class="project-meta">Stage Setec · 2025 · 3 mois</p>
+                        <p>Conception complète VRD : voirie, réseaux humides, assainissement EU/EP, gestion alternative des eaux pluviales avec noues et bassins de rétention.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">AutoCAD</span>
+                            <span class="tag-sm">Hydraulique</span>
+                            <span class="tag-sm">Mensura</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="batiment">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4a2c5a, #7a3f9c);">
+                        <span class="project-tag">BIM</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Maquette BIM — Centre culturel</h3>
+                        <p class="project-meta">Projet BIM · 2025 · 2 mois</p>
+                        <p>Modélisation complète sous Revit d'un centre culturel de 2500m². Coordination architecture/structure/MEP, détection de clashs, génération de plans.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Revit</span>
+                            <span class="tag-sm">Navisworks</span>
+                            <span class="tag-sm">BIM Niveau 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ouvrage">
+                    <div class="project-image" style="background: linear-gradient(135deg, #5a3520, #a8612e);">
+                        <span class="project-tag">Ouvrage d'art</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Passerelle piétonne — Concours étudiant</h3>
+                        <p class="project-meta">Concours · 2024 · 3ème prix national</p>
+                        <p>Conception d'une passerelle piétonne en bois lamellé-collé de 45m. Étude esthétique, calcul structurel et insertion paysagère. Récompensé au concours étudiant CFEM.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Bois lamellé</span>
+                            <span class="tag-sm">SketchUp</span>
+                            <span class="tag-sm">Eurocode 5</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="geotech">
+                    <div class="project-image" style="background: linear-gradient(135deg, #3a3a2c, #6b6b4a);">
+                        <span class="project-tag">Géotechnique</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Étude de fondations spéciales</h3>
+                        <p class="project-meta">Projet académique · 2025 · 2 mois</p>
+                        <p>Dimensionnement d'un système de pieux pour un bâtiment en zone à sol compressible. Analyse pressiométrique, calcul de capacité portante et tassements.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Plaxis</span>
+                            <span class="tag-sm">Foxta</span>
+                            <span class="tag-sm">DTU 13.2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="vrd">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a4d5c, #3a8ba0);">
+                        <span class="project-tag">Hydraulique</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Modélisation hydraulique urbaine</h3>
+                        <p class="project-meta">Projet académique · 2024 · 3 mois</p>
+                        <p>Simulation d'un réseau d'assainissement de quartier sous SWMM. Étude des débordements lors d'événements pluvieux décennaux et propositions de redimensionnement.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">SWMM</span>
+                            <span class="tag-sm">Python</span>
+                            <span class="tag-sm">QGIS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="batiment">
+                    <div class="project-image" style="background: linear-gradient(135deg, #5c1a1a, #a03a3a);">
+                        <span class="project-tag">Réhabilitation</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Réhabilitation thermique — Bâtiment des années 70</h3>
+                        <p class="project-meta">Projet académique · 2024 · 2 mois</p>
+                        <p>Diagnostic et propositions de rénovation thermique d'un immeuble haussmannien. Étude technico-économique et simulation thermique dynamique.</p>
+                        <div class="project-tags">
+                            <span class="tag-sm">Pleiades</span>
+                            <span class="tag-sm">RT 2012</span>
+                            <span class="tag-sm">Bilan carbone</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Adam Benali</h3>
+                <p>Étudiant Ingénieur en Génie Civil</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:adam.benali@example.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Adam Benali — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

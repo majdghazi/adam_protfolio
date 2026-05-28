@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Adam Benali</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Adam<span>Benali</span></a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Me contacter</h1>
+            <p>Une opportunité de stage, un projet, ou simplement échanger ? N'hésitez pas !</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Restons en contact</h2>
+                    <p>Je suis actuellement à la recherche d'un stage de fin d'études en bureau d'études structure pour l'été 2026. N'hésitez pas à me contacter pour toute opportunité.</p>
+
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:adam.benali@example.com">adam.benali@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Téléphone</span>
+                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Localisation</span>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="#">linkedin.com/in/adambenali</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Disponibilité</span>
+                        <span>Stage à partir d'avril 2026</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envoyez-moi un message</h3>
+
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Entreprise / Organisation</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">— Choisir un sujet —</option>
+                                <option value="stage">Proposition de stage</option>
+                                <option value="emploi">Opportunité d'emploi</option>
+                                <option value="projet">Collaboration sur un projet</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <p class="form-note">* Champs obligatoires. Réponse sous 48h.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Adam Benali</h3>
+                <p>Étudiant Ingénieur en Génie Civil</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:adam.benali@example.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Adam Benali — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
