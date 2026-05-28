@@ -1,4 +1,4 @@
-# Adam Benali — Portfolio Génie Civil
+# Adam Hadri — Portfolio Génie Civil
 
 Portfolio statique pour un étudiant ingénieur en Génie Civil (3ème année).
 Site multi-pages en HTML / CSS / JavaScript vanilla, sans framework, déployable sur Vercel.
@@ -46,7 +46,7 @@ Vercel détecte automatiquement le site statique et le déploie en quelques seco
 - **Textes** : modifier directement les fichiers HTML
 - **Couleurs** : variables CSS en haut de [css/style.css](css/style.css) (`:root`)
 - **Photos de projets** : ajouter les images dans `images/` et remplacer les `background: linear-gradient(...)` dans les blocs `.project-image` par `background-image: url(...)`
-- **CV PDF** : déposer le fichier dans `files/CV_Adam_Benali.pdf`
+- **CV PDF** : déposer le fichier dans `files/CV_Adam_Hadri.pdf`
 
 ## ⚠️ Note
 
