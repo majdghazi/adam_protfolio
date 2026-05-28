@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Adam<span>Hadri</span></a>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AH</span>
+                <span class="logo-text">Adam Hadri</span>
+            </a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -27,8 +30,9 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>À propos de moi</h1>
-            <p>Parcours, formation et compétences.</p>
+            <span class="section-eyebrow">— À propos</span>
+            <h1>Adam Hadri</h1>
+            <p>Étudiant ingénieur en Génie Civil, passionné par la conception d'ouvrages durables.</p>
         </div>
     </section>
 
@@ -36,25 +40,37 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-photo">
-                    <div class="photo-placeholder">
-                        <span>AH</span>
+                    <div class="about-photo-frame">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Adam Hadri">
+                    </div>
+                    <div class="about-photo-badge">
+                        <span class="badge-num">3<sup>e</sup></span>
+                        <span class="badge-label">année ENPC</span>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h2>Adam Hadri</h2>
-                    <p class="lead">Étudiant ingénieur en Génie Civil, passionné par la conception d'ouvrages durables et innovants.</p>
-                    <p>
-                        Actuellement en 3ème année à l'École Nationale des Ponts et Chaussées, je me spécialise
-                        dans le calcul de structures et la conception de bâtiments. Mon objectif : devenir
-                        ingénieur structure dans un bureau d'études reconnu, avec une expertise en construction
-                        durable et BIM.
+                    <span class="section-eyebrow">— Bonjour</span>
+                    <h2>Un étudiant qui aime<br>construire — au sens propre.</h2>
+                    <p class="lead">
+                        Je suis en 3<sup>e</sup> année à l'École Nationale des Ponts et Chaussées,
+                        spécialisé en calcul de structures et conception de bâtiments.
                     </p>
                     <p>
-                        Curieux et méthodique, j'aime comprendre comment chaque élément contribue à la stabilité
-                        d'un ouvrage. À travers mes stages et projets académiques, j'ai développé une approche
+                        Mon objectif : devenir ingénieur structure dans un bureau d'études reconnu,
+                        avec une expertise en construction durable et BIM. Curieux et méthodique,
+                        j'aime comprendre comment chaque élément contribue à la stabilité d'un ouvrage.
+                    </p>
+                    <p>
+                        À travers mes stages et projets académiques, j'ai développé une approche
                         rigoureuse, du calcul théorique jusqu'à l'application sur chantier.
                     </p>
-                    <a href="files/CV_Adam_Hadri.pdf" class="btn btn-primary" download>Télécharger mon CV (PDF)</a>
+                    <div class="about-actions">
+                        <a href="files/CV_Adam_Hadri.pdf" class="btn btn-primary" download>
+                            Télécharger mon CV
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">Me contacter</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,7 +79,8 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2>Formation</h2>
+                <span class="section-eyebrow">— Parcours</span>
+                <h2>Formation académique.</h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -97,33 +114,43 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Expérience professionnelle</h2>
+                <span class="section-eyebrow">— Expérience</span>
+                <h2>Stages professionnels.</h2>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Été 2025</div>
-                    <div class="timeline-content">
-                        <h3>Stagiaire Bureau d'Études — Setec TPI</h3>
-                        <p class="timeline-sub">Paris · 3 mois</p>
+            <div class="exp-grid">
+                <article class="exp-card">
+                    <div class="exp-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="Bureau d'études">
+                    </div>
+                    <div class="exp-content">
+                        <span class="exp-date">Été 2025 · 3 mois</span>
+                        <h3>Setec TPI — Bureau d'Études</h3>
+                        <p class="exp-sub">Paris · Stagiaire Ingénieur Junior</p>
                         <ul>
                             <li>Calculs de descente de charges sur un projet de logements R+8</li>
                             <li>Modélisation 3D sous Robot Structural Analysis</li>
                             <li>Rédaction de notes de calcul selon Eurocodes</li>
+                            <li>Participation aux réunions de coordination avec l'architecte</li>
                         </ul>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Été 2024</div>
-                    <div class="timeline-content">
-                        <h3>Stagiaire Ouvrier — Vinci Construction</h3>
-                        <p class="timeline-sub">Chantier Grand Paris Express · 2 mois</p>
+                </article>
+
+                <article class="exp-card">
+                    <div class="exp-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Chantier">
+                    </div>
+                    <div class="exp-content">
+                        <span class="exp-date">Été 2024 · 2 mois</span>
+                        <h3>Vinci Construction — Chantier</h3>
+                        <p class="exp-sub">Grand Paris Express · Stagiaire Ouvrier</p>
                         <ul>
                             <li>Découverte des métiers du gros œuvre</li>
                             <li>Suivi des coulages de béton et ferraillage</li>
-                            <li>Compréhension des contraintes chantier</li>
+                            <li>Compréhension des contraintes chantier et planning</li>
+                            <li>Lecture de plans d'exécution</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -131,7 +158,8 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2>Compétences</h2>
+                <span class="section-eyebrow">— Compétences</span>
+                <h2>Stack technique.</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-block">
@@ -141,7 +169,7 @@
                         <div class="skill"><span>Revit (BIM)</span><div class="bar"><div style="width:75%"></div></div></div>
                         <div class="skill"><span>Robot Structural Analysis</span><div class="bar"><div style="width:80%"></div></div></div>
                         <div class="skill"><span>ETABS</span><div class="bar"><div style="width:65%"></div></div></div>
-                        <div class="skill"><span>SketchUp</span><div class="bar"><div style="width:70%"></div></div></div>
+                        <div class="skill"><span>SketchUp · Twinmotion</span><div class="bar"><div style="width:70%"></div></div></div>
                     </div>
                 </div>
                 <div class="skill-block">
@@ -150,16 +178,16 @@
                         <div class="skill"><span>Python (calcul scientifique)</span><div class="bar"><div style="width:80%"></div></div></div>
                         <div class="skill"><span>MATLAB</span><div class="bar"><div style="width:70%"></div></div></div>
                         <div class="skill"><span>Excel / VBA</span><div class="bar"><div style="width:85%"></div></div></div>
-                        <div class="skill"><span>Pack Office</span><div class="bar"><div style="width:95%"></div></div></div>
+                        <div class="skill"><span>QGIS</span><div class="bar"><div style="width:75%"></div></div></div>
                     </div>
                 </div>
                 <div class="skill-block">
                     <h3>Langues</h3>
                     <div class="skill-list">
-                        <div class="skill"><span>Français — Langue maternelle</span><div class="bar"><div style="width:100%"></div></div></div>
-                        <div class="skill"><span>Anglais — C1 (TOEIC 945)</span><div class="bar"><div style="width:90%"></div></div></div>
-                        <div class="skill"><span>Arabe — Courant</span><div class="bar"><div style="width:85%"></div></div></div>
-                        <div class="skill"><span>Espagnol — B1</span><div class="bar"><div style="width:60%"></div></div></div>
+                        <div class="skill"><span>Français · Langue maternelle</span><div class="bar"><div style="width:100%"></div></div></div>
+                        <div class="skill"><span>Anglais · C1 (TOEIC 945)</span><div class="bar"><div style="width:90%"></div></div></div>
+                        <div class="skill"><span>Arabe · Courant</span><div class="bar"><div style="width:85%"></div></div></div>
+                        <div class="skill"><span>Espagnol · B1</span><div class="bar"><div style="width:60%"></div></div></div>
                     </div>
                 </div>
                 <div class="skill-block">
@@ -180,24 +208,41 @@
     </section>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <h3>Adam Hadri</h3>
-                <p>Étudiant Ingénieur en Génie Civil</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">AH</span>
+                        <span>Adam Hadri</span>
+                    </div>
+                    <p>Étudiant ingénieur en Génie Civil · École des Ponts et Chaussées · Paris</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="about.html">À propos</a>
+                        <a href="projects.html">Projets</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:adam.hadri@example.com">adam.hadri@example.com</a>
+                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Réseaux</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="files/CV_Adam_Hadri.pdf">CV (PDF)</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">À propos</a>
-                <a href="projects.html">Projets</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>© 2026 Adam Hadri — Portfolio Génie Civil</p>
+                <p>Site conçu et développé from scratch.</p>
             </div>
-            <div class="footer-social">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="mailto:adam.hadri@example.com" aria-label="Email">Email</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Adam Hadri — Tous droits réservés.</p>
         </div>
     </footer>
 

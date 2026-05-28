@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adam Hadri - Étudiant ingénieur en Génie Civil, 3ème année. Portfolio de projets en structures, bâtiment et ouvrages d'art.">
-    <title>Adam Hadri — Étudiant Ingénieur Génie Civil</title>
+    <meta name="description" content="Adam Hadri — Étudiant ingénieur en Génie Civil, 3ème année. Portfolio de projets en structures, bâtiment et ouvrages d'art.">
+    <meta property="og:title" content="Adam Hadri — Portfolio Génie Civil">
+    <meta property="og:description" content="Étudiant ingénieur passionné par les structures et la construction durable.">
+    <title>Adam Hadri — Ingénieur Génie Civil</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Adam<span>Hadri</span></a>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AH</span>
+                <span class="logo-text">Adam Hadri</span>
+            </a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -26,149 +31,323 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <span class="hero-tag">Étudiant Ingénieur · 3ème année</span>
-                <h1>Bâtir demain,<br><span class="accent">une structure à la fois.</span></h1>
-                <p class="hero-subtitle">
-                    Étudiant en Génie Civil à l'École Nationale des Ponts et Chaussées,
-                    spécialisé en calcul de structures et conception de bâtiments.
-                </p>
-                <div class="hero-cta">
-                    <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
-                    <a href="contact.html" class="btn btn-outline">Me contacter</a>
+    <!-- HERO PLEIN ÉCRAN -->
+    <section class="hero-full">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80" alt="Architecture" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-meta">
+                <span class="hero-line"></span>
+                <span>PORTFOLIO · 2026</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="reveal">Concevoir.</span>
+                <span class="reveal">Calculer.</span>
+                <span class="reveal accent">Construire.</span>
+            </h1>
+            <p class="hero-tagline reveal">
+                Étudiant ingénieur en Génie Civil à l'École Nationale des Ponts et Chaussées.
+                Spécialisé en calcul de structures, BIM et construction durable.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="projects.html" class="btn btn-primary">
+                    Découvrir mes projets
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#expertise" class="btn btn-ghost">En savoir plus</a>
+            </div>
+
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+
+        <div class="hero-stats-bar">
+            <div class="container hero-stats-container">
+                <div class="hero-stat">
+                    <span class="stat-num">3<sup>e</sup></span>
+                    <span class="stat-label">Année d'études</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">8+</span>
+                    <span class="stat-label">Projets réalisés</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">Stages professionnels</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">945</span>
+                    <span class="stat-label">TOEIC · Anglais C1</span>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <div class="hero-card-grid">
-                        <div class="stat">
-                            <span class="stat-num">3</span>
-                            <span class="stat-label">Année d'études</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">8+</span>
-                            <span class="stat-label">Projets réalisés</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">5</span>
-                            <span class="stat-label">Logiciels maîtrisés</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">2</span>
-                            <span class="stat-label">Stages effectués</span>
-                        </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3D MAQUETTE -->
+    <section class="section-3d">
+        <div class="container">
+            <div class="section-3d-grid">
+                <div class="section-3d-text">
+                    <span class="section-eyebrow">— BIM & Modélisation 3D</span>
+                    <h2>La structure,<br>vue de l'intérieur.</h2>
+                    <p>
+                        La modélisation BIM est au cœur de ma pratique. Je conçois et analyse
+                        des maquettes 3D structurelles permettant de visualiser chaque élément
+                        porteur, d'optimiser les sections, et de coordonner les corps d'état.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Modélisation Revit & ETABS
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Analyse structurelle dynamique
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Détection de clashs Navisworks
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Quantitatifs automatisés
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-3d-canvas">
+                    <div id="threeCanvas"></div>
+                    <div class="canvas-controls">
+                        <span class="canvas-tip">↻ Glissez pour faire pivoter</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- EXPERTISE -->
+    <section class="section" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">— Domaines d'expertise</span>
+                <h2>Une formation complète<br>en génie civil moderne.</h2>
+            </div>
+            <div class="expertise-grid">
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+                    </div>
+                    <h3>Calcul de Structures</h3>
+                    <p>Béton armé, charpente métallique et bois. Dimensionnement selon les Eurocodes 2, 3 et 5.</p>
+                    <div class="expertise-tags">
+                        <span>Eurocode 2</span>
+                        <span>Robot SA</span>
+                        <span>ETABS</span>
+                    </div>
+                </article>
+
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>BIM & Maquette numérique</h3>
+                    <p>Conception 3D, coordination multi-disciplinaire, gestion de clashs et extraction de plans.</p>
+                    <div class="expertise-tags">
+                        <span>Revit</span>
+                        <span>Navisworks</span>
+                        <span>IFC</span>
+                    </div>
+                </article>
+
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M4 20V8M20 20V8M4 8l8-5 8 5M8 20v-6h8v6"/></svg>
+                    </div>
+                    <h3>Ouvrages d'Art</h3>
+                    <p>Ponts, viaducs et passerelles. Analyse statique et dynamique des structures complexes.</p>
+                    <div class="expertise-tags">
+                        <span>Câbles & haubans</span>
+                        <span>Précontraint</span>
+                    </div>
+                </article>
+
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M12 22v-2M2 12h6M22 12h-2M5 5l4 4M19 19l-4-4M5 19l4-4M19 5l-4 4"/></svg>
+                    </div>
+                    <h3>Géotechnique</h3>
+                    <p>Étude de sols, fondations profondes et superficielles, soutènements et talus.</p>
+                    <div class="expertise-tags">
+                        <span>Plaxis</span>
+                        <span>Foxta</span>
+                    </div>
+                </article>
+
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+                    </div>
+                    <h3>Hydraulique urbaine</h3>
+                    <p>Assainissement, gestion des eaux pluviales, hydrologie et réseaux humides.</p>
+                    <div class="expertise-tags">
+                        <span>SWMM</span>
+                        <span>QGIS</span>
+                    </div>
+                </article>
+
+                <article class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 010 20M2 12h20"/></svg>
+                    </div>
+                    <h3>Construction durable</h3>
+                    <p>RE2020, bilan carbone, économie circulaire et matériaux biosourcés.</p>
+                    <div class="expertise-tags">
+                        <span>RE2020</span>
+                        <span>ACV</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS PHARES -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-eyebrow">— Projets phares</span>
+                <h2>Une sélection de travaux<br>récents.</h2>
+            </div>
+
+            <div class="featured-projects">
+                <a href="projects.html" class="featured-card large">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80" alt="Tour résidentielle">
+                    </div>
+                    <div class="featured-info">
+                        <span class="featured-tag">Bâtiment · R+12</span>
+                        <h3>Tour résidentielle — Lyon Confluence</h3>
+                        <p>Dimensionnement structurel complet d'un immeuble de 12 étages en béton armé.</p>
+                    </div>
+                </a>
+
+                <a href="projects.html" class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1473042904451-00171c69419d?auto=format&fit=crop&w=1200&q=80" alt="Pont haubané">
+                    </div>
+                    <div class="featured-info">
+                        <span class="featured-tag">Ouvrage d'art</span>
+                        <h3>Pont haubané sur la Loire</h3>
+                        <p>Étude conceptuelle, 180m de portée principale.</p>
+                    </div>
+                </a>
+
+                <a href="projects.html" class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80" alt="Éco-quartier">
+                    </div>
+                    <div class="featured-info">
+                        <span class="featured-tag">VRD · Stage Setec</span>
+                        <h3>Éco-quartier de Bordeaux</h3>
+                        <p>Conception VRD et gestion alternative des eaux pluviales.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section-cta">
+                <a href="projects.html" class="btn btn-light">
+                    Voir tous les projets (8)
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLBOX LOGICIELS -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Domaines d'expertise</h2>
-                <p>Des compétences acquises à travers les cours et les projets concrets.</p>
+                <span class="section-eyebrow">— Outils & Logiciels</span>
+                <h2>Toolbox technique.</h2>
             </div>
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-icon">🏗️</div>
-                    <h3>Calcul de Structures</h3>
-                    <p>Béton armé, charpente métallique, dimensionnement selon Eurocodes 2 et 3.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🏢</div>
-                    <h3>Bâtiment & BIM</h3>
-                    <p>Conception architecturale, modélisation BIM avec Revit, maquette numérique.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🌉</div>
-                    <h3>Ouvrages d'Art</h3>
-                    <p>Ponts, viaducs, ouvrages de soutènement. Analyse statique et dynamique.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💧</div>
-                    <h3>Hydraulique</h3>
-                    <p>Assainissement, hydrologie urbaine, dimensionnement de réseaux.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🌍</div>
-                    <h3>Géotechnique</h3>
-                    <p>Mécanique des sols, fondations, études géotechniques préalables.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📐</div>
-                    <h3>Topographie</h3>
-                    <p>Relevés terrain, traitement de données, plans topographiques.</p>
-                </div>
+            <div class="tools-grid">
+                <div class="tool"><strong>AutoCAD</strong><span>Dessin 2D · Plans</span></div>
+                <div class="tool"><strong>Revit</strong><span>Modélisation BIM</span></div>
+                <div class="tool"><strong>Robot SA</strong><span>Analyse structure</span></div>
+                <div class="tool"><strong>ETABS</strong><span>Bâtiment béton</span></div>
+                <div class="tool"><strong>Plaxis</strong><span>Géotechnique</span></div>
+                <div class="tool"><strong>SWMM</strong><span>Hydraulique</span></div>
+                <div class="tool"><strong>Python</strong><span>Calcul scientifique</span></div>
+                <div class="tool"><strong>QGIS</strong><span>SIG · Cartographie</span></div>
             </div>
         </div>
     </section>
 
-    <section class="section section-alt">
+    <!-- CTA FINAL -->
+    <section class="section-cta-final">
         <div class="container">
-            <div class="section-header">
-                <h2>Projets récents</h2>
-                <p>Une sélection de mes travaux académiques et de stage.</p>
-            </div>
-            <div class="grid-3">
-                <a href="projects.html" class="project-preview">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1e3a5f, #2c5282);">
-                        <span class="project-tag">Bâtiment</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Tour résidentielle R+12</h3>
-                        <p>Dimensionnement structurel d'un immeuble de 12 étages en béton armé.</p>
-                    </div>
-                </a>
-                <a href="projects.html" class="project-preview">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2d5a3f, #4a7c59);">
-                        <span class="project-tag">Ouvrage d'art</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pont haubané</h3>
-                        <p>Étude conceptuelle d'un pont de 180m de portée sur la Loire.</p>
-                    </div>
-                </a>
-                <a href="projects.html" class="project-preview">
-                    <div class="project-image" style="background: linear-gradient(135deg, #8b4513, #c9851e);">
-                        <span class="project-tag">VRD</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Lotissement écologique</h3>
-                        <p>Conception VRD et assainissement d'un éco-quartier de 40 lots.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="section-cta">
-                <a href="projects.html" class="btn btn-primary">Voir tous les projets →</a>
+            <div class="cta-card">
+                <div class="cta-content">
+                    <span class="section-eyebrow light">— Disponible pour un stage</span>
+                    <h2>Recherche stage<br>fin d'études · été 2026</h2>
+                    <p>Bureau d'études structure, BIM, ou maîtrise d'œuvre.<br>Mobilité France entière et international.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        Me contacter
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <h3>Adam Hadri</h3>
-                <p>Étudiant Ingénieur en Génie Civil</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">AH</span>
+                        <span>Adam Hadri</span>
+                    </div>
+                    <p>Étudiant ingénieur en Génie Civil · École des Ponts et Chaussées · Paris</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="about.html">À propos</a>
+                        <a href="projects.html">Projets</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:adam.hadri@example.com">adam.hadri@example.com</a>
+                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Réseaux</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="files/CV_Adam_Hadri.pdf">CV (PDF)</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">À propos</a>
-                <a href="projects.html">Projets</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>© 2026 Adam Hadri — Portfolio Génie Civil</p>
+                <p>Site conçu et développé from scratch.</p>
             </div>
-            <div class="footer-social">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="mailto:adam.hadri@example.com" aria-label="Email">Email</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Adam Hadri — Tous droits réservés.</p>
         </div>
     </footer>
 
+    <!-- Three.js pour la maquette 3D -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scene3d.js"></script>
 </body>
 </html>

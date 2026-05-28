@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Adam<span>Hadri</span></a>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AH</span>
+                <span class="logo-text">Adam Hadri</span>
+            </a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -27,8 +30,9 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Me contacter</h1>
-            <p>Une opportunité de stage, un projet, ou simplement échanger ? N'hésitez pas !</p>
+            <span class="section-eyebrow">— Contact</span>
+            <h1>Travaillons ensemble.</h1>
+            <p>Une opportunité de stage, un projet ou simplement échanger ? N'hésitez pas.</p>
         </div>
     </section>
 
@@ -36,28 +40,58 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>Restons en contact</h2>
-                    <p>Je suis actuellement à la recherche d'un stage de fin d'études en bureau d'études structure pour l'été 2026. N'hésitez pas à me contacter pour toute opportunité.</p>
+                    <div class="contact-status">
+                        <span class="status-dot"></span>
+                        Disponible pour un stage à partir d'avril 2026
+                    </div>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:adam.hadri@example.com">adam.hadri@example.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Téléphone</span>
-                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Localisation</span>
-                        <span>Paris, France</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">LinkedIn</span>
-                        <a href="#">linkedin.com/in/adamhadri</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Disponibilité</span>
-                        <span>Stage à partir d'avril 2026</span>
+                    <h2>Restons en contact.</h2>
+                    <p>
+                        Je suis actuellement à la recherche d'un stage de fin d'études en bureau
+                        d'études structure ou BIM pour l'été 2026.
+                        Réponse garantie sous 48h.
+                    </p>
+
+                    <div class="contact-items">
+                        <a href="mailto:adam.hadri@example.com" class="contact-item-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">adam.hadri@example.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+33612345678" class="contact-item-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Téléphone</span>
+                                <span class="contact-value">+33 6 12 34 56 78</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Localisation</span>
+                                <span class="contact-value">Paris, France · Mobile</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="contact-item-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/adamhadri</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -65,19 +99,20 @@
                     <form class="contact-form" id="contactForm">
                         <h3>Envoyez-moi un message</h3>
 
-                        <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="jean@entreprise.com">
+                            </div>
                         </div>
 
                         <div class="form-group">
                             <label for="company">Entreprise / Organisation</label>
-                            <input type="text" id="company" name="company">
+                            <input type="text" id="company" name="company" placeholder="Setec, Vinci, Bouygues...">
                         </div>
 
                         <div class="form-group">
@@ -93,11 +128,14 @@
 
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <textarea id="message" name="message" rows="6" required placeholder="Bonjour Adam, je vous contacte au sujet de..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                        <p class="form-note">* Champs obligatoires. Réponse sous 48h.</p>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Envoyer le message
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                        <p class="form-note">* Champs obligatoires. Réponse garantie sous 48h.</p>
                     </form>
                 </div>
             </div>
@@ -105,24 +143,41 @@
     </section>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <h3>Adam Hadri</h3>
-                <p>Étudiant Ingénieur en Génie Civil</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">AH</span>
+                        <span>Adam Hadri</span>
+                    </div>
+                    <p>Étudiant ingénieur en Génie Civil · École des Ponts et Chaussées · Paris</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="about.html">À propos</a>
+                        <a href="projects.html">Projets</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:adam.hadri@example.com">adam.hadri@example.com</a>
+                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Réseaux</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="files/CV_Adam_Hadri.pdf">CV (PDF)</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">À propos</a>
-                <a href="projects.html">Projets</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>© 2026 Adam Hadri — Portfolio Génie Civil</p>
+                <p>Site conçu et développé from scratch.</p>
             </div>
-            <div class="footer-social">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="mailto:adam.hadri@example.com" aria-label="Email">Email</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Adam Hadri — Tous droits réservés.</p>
         </div>
     </footer>
 

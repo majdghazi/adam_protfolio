@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Adam<span>Hadri</span></a>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AH</span>
+                <span class="logo-text">Adam Hadri</span>
+            </a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -27,15 +30,16 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Mes Projets</h1>
-            <p>Une sélection de travaux académiques, projets de groupe et missions de stage.</p>
+            <span class="section-eyebrow">— Portfolio</span>
+            <h1>Projets</h1>
+            <p>Travaux académiques, projets de groupe et missions de stage en génie civil.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
             <div class="filters">
-                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn active" data-filter="all">Tous · 8</button>
                 <button class="filter-btn" data-filter="batiment">Bâtiment</button>
                 <button class="filter-btn" data-filter="ouvrage">Ouvrages d'art</button>
                 <button class="filter-btn" data-filter="vrd">VRD & Hydraulique</button>
@@ -44,12 +48,13 @@
 
             <div class="projects-grid">
                 <article class="project-card" data-category="batiment">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1e3a5f, #2c5282);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80" alt="Tour résidentielle">
                         <span class="project-tag">Bâtiment</span>
                     </div>
                     <div class="project-body">
-                        <h3>Tour résidentielle R+12 — Lyon</h3>
-                        <p class="project-meta">Projet académique · 2025 · 4 mois</p>
+                        <h3>Tour résidentielle R+12</h3>
+                        <p class="project-meta">Lyon · Projet académique · 2025 · 4 mois</p>
                         <p>Dimensionnement complet d'un immeuble résidentiel de 12 étages en béton armé. Calcul des descentes de charges, voiles, dalles et fondations selon Eurocode 2.</p>
                         <div class="project-tags">
                             <span class="tag-sm">Béton armé</span>
@@ -60,7 +65,8 @@
                 </article>
 
                 <article class="project-card" data-category="ouvrage">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2d5a3f, #4a7c59);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1473042904451-00171c69419d?auto=format&fit=crop&w=900&q=80" alt="Pont haubané">
                         <span class="project-tag">Ouvrage d'art</span>
                     </div>
                     <div class="project-body">
@@ -76,12 +82,13 @@
                 </article>
 
                 <article class="project-card" data-category="vrd">
-                    <div class="project-image" style="background: linear-gradient(135deg, #8b4513, #c9851e);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80" alt="Éco-quartier">
                         <span class="project-tag">VRD</span>
                     </div>
                     <div class="project-body">
-                        <h3>Éco-quartier de 40 lots — Bordeaux</h3>
-                        <p class="project-meta">Stage Setec · 2025 · 3 mois</p>
+                        <h3>Éco-quartier de 40 lots</h3>
+                        <p class="project-meta">Bordeaux · Stage Setec · 2025 · 3 mois</p>
                         <p>Conception complète VRD : voirie, réseaux humides, assainissement EU/EP, gestion alternative des eaux pluviales avec noues et bassins de rétention.</p>
                         <div class="project-tags">
                             <span class="tag-sm">AutoCAD</span>
@@ -92,7 +99,8 @@
                 </article>
 
                 <article class="project-card" data-category="batiment">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4a2c5a, #7a3f9c);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Maquette BIM">
                         <span class="project-tag">BIM</span>
                     </div>
                     <div class="project-body">
@@ -108,13 +116,14 @@
                 </article>
 
                 <article class="project-card" data-category="ouvrage">
-                    <div class="project-image" style="background: linear-gradient(135deg, #5a3520, #a8612e);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545158539-1709fb122ce5?auto=format&fit=crop&w=900&q=80" alt="Passerelle bois">
                         <span class="project-tag">Ouvrage d'art</span>
                     </div>
                     <div class="project-body">
-                        <h3>Passerelle piétonne — Concours étudiant</h3>
-                        <p class="project-meta">Concours · 2024 · 3ème prix national</p>
-                        <p>Conception d'une passerelle piétonne en bois lamellé-collé de 45m. Étude esthétique, calcul structurel et insertion paysagère. Récompensé au concours étudiant CFEM.</p>
+                        <h3>Passerelle piétonne en bois lamellé</h3>
+                        <p class="project-meta">Concours CFEM · 2024 · 3ème prix national</p>
+                        <p>Conception d'une passerelle piétonne en bois lamellé-collé de 45m. Étude esthétique, calcul structurel et insertion paysagère.</p>
                         <div class="project-tags">
                             <span class="tag-sm">Bois lamellé</span>
                             <span class="tag-sm">SketchUp</span>
@@ -124,7 +133,8 @@
                 </article>
 
                 <article class="project-card" data-category="geotech">
-                    <div class="project-image" style="background: linear-gradient(135deg, #3a3a2c, #6b6b4a);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="Fondations">
                         <span class="project-tag">Géotechnique</span>
                     </div>
                     <div class="project-body">
@@ -140,13 +150,14 @@
                 </article>
 
                 <article class="project-card" data-category="vrd">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1a4d5c, #3a8ba0);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Réseau hydraulique">
                         <span class="project-tag">Hydraulique</span>
                     </div>
                     <div class="project-body">
                         <h3>Modélisation hydraulique urbaine</h3>
                         <p class="project-meta">Projet académique · 2024 · 3 mois</p>
-                        <p>Simulation d'un réseau d'assainissement de quartier sous SWMM. Étude des débordements lors d'événements pluvieux décennaux et propositions de redimensionnement.</p>
+                        <p>Simulation d'un réseau d'assainissement de quartier sous SWMM. Étude des débordements lors d'événements pluvieux décennaux.</p>
                         <div class="project-tags">
                             <span class="tag-sm">SWMM</span>
                             <span class="tag-sm">Python</span>
@@ -156,16 +167,17 @@
                 </article>
 
                 <article class="project-card" data-category="batiment">
-                    <div class="project-image" style="background: linear-gradient(135deg, #5c1a1a, #a03a3a);">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&q=80" alt="Réhabilitation Haussmann">
                         <span class="project-tag">Réhabilitation</span>
                     </div>
                     <div class="project-body">
-                        <h3>Réhabilitation thermique — Bâtiment des années 70</h3>
+                        <h3>Réhabilitation thermique — Haussmannien</h3>
                         <p class="project-meta">Projet académique · 2024 · 2 mois</p>
                         <p>Diagnostic et propositions de rénovation thermique d'un immeuble haussmannien. Étude technico-économique et simulation thermique dynamique.</p>
                         <div class="project-tags">
                             <span class="tag-sm">Pleiades</span>
-                            <span class="tag-sm">RT 2012</span>
+                            <span class="tag-sm">RE2020</span>
                             <span class="tag-sm">Bilan carbone</span>
                         </div>
                     </div>
@@ -175,24 +187,41 @@
     </section>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <h3>Adam Hadri</h3>
-                <p>Étudiant Ingénieur en Génie Civil</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">AH</span>
+                        <span>Adam Hadri</span>
+                    </div>
+                    <p>Étudiant ingénieur en Génie Civil · École des Ponts et Chaussées · Paris</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="about.html">À propos</a>
+                        <a href="projects.html">Projets</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:adam.hadri@example.com">adam.hadri@example.com</a>
+                        <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Réseaux</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="files/CV_Adam_Hadri.pdf">CV (PDF)</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">À propos</a>
-                <a href="projects.html">Projets</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>© 2026 Adam Hadri — Portfolio Génie Civil</p>
+                <p>Site conçu et développé from scratch.</p>
             </div>
-            <div class="footer-social">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="mailto:adam.hadri@example.com" aria-label="Email">Email</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Adam Hadri — Tous droits réservés.</p>
         </div>
     </footer>
 
